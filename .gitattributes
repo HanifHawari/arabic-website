@@ -1,0 +1,13 @@
+# Simpan semua teks dengan akhir baris LF di repo & working copy (konsisten di Windows/Linux/macOS,
+# dan byte teks Arab di content/bab3.json tidak berubah).
+* text=auto eol=lf
+
+# Biner
+*.mp3 binary
+*.m4a binary
+*.webm binary
+*.ogg binary
+*.wav binary
+*.ico binary
+*.png binary
+*.woff2 binary

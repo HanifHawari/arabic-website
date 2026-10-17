@@ -1,0 +1,1110 @@
+{
+  "meta": {
+    "source": "Buku Siswa Bahasa Arab MTs Kelas VII, Kemenag RI 2020 — Ad-Dars ats-Tsalits (hal. buku 50–73 = hal. PDF 56–79)",
+    "title_ar": "الْأَدَوَاتُ الْمَدْرَسِيَّةُ",
+    "title_id": "Peralatan Sekolah",
+    "transcription_note": "Ditranskripsi dari gambar halaman PDF. Harakat WAJIB dicek ulang terhadap buku sebelum rilis."
+  },
+  "kompetensi": {
+    "kd": [
+      {
+        "kode": "3.5",
+        "teks": "Memahami fungsi sosial, struktur teks dan unsur kebahasaan dari teks naratif sederhana tentang jenis dan warna, tema الأدوات المدرسية, tindak tutur menunjuk peralatan sekolah dengan susunan الضمير المتصل."
+      },
+      {
+        "kode": "3.6",
+        "teks": "Menganalisis gagasan dari teks naratif sederhana tentang jenis dan warna, tema الأدوات المدرسية, dengan memperhatikan bentuk, makna, dan fungsi الضمير المتصل."
+      },
+      {
+        "kode": "4.5",
+        "teks": "Mendemonstrasikan tindak tutur menunjuk peralatan sekolah dengan susunan الضمير المتصل, lisan maupun tulisan."
+      },
+      {
+        "kode": "4.6",
+        "teks": "Menyajikan hasil analisis gagasan dari teks naratif sederhana tentang jenis dan warna, tema الأدوات المدرسية, dengan memperhatikan الضمير المتصل."
+      }
+    ]
+  },
+  "vocab": {
+    "sekolah": [
+      {
+        "id": "haqibah",
+        "ar": "حَقِيْبَةٌ",
+        "stem": "حَقِيْبَة",
+        "id_meaning": "tas",
+        "gender": "f",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "miqlamah",
+        "ar": "مَقْلَمَةٌ",
+        "stem": "مَقْلَمَة",
+        "id_meaning": "kotak pensil",
+        "gender": "f",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "qalam",
+        "ar": "قَلَمٌ",
+        "stem": "قَلَم",
+        "id_meaning": "pena / pulpen",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "mirsam",
+        "ar": "مِرْسَمٌ",
+        "stem": "مِرْسَم",
+        "id_meaning": "pensil",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true,
+        "note": "Buku pakai مِرْسَم = pensil (lihat contoh 'عندها مرسم' dan 'المرسم لونه بني')."
+      },
+      {
+        "id": "qalam_rashash",
+        "ar": "قَلَمُ رَصَاصٍ",
+        "stem": null,
+        "id_meaning": "pensil (kayu)",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": false,
+        "note": "AMBIGU: makna harfiah = pensil, tapi gambar di buku hal. 52 menampilkan spidol. Konfirmasi ke guru."
+      },
+      {
+        "id": "misthorah",
+        "ar": "مِسْطَرَةٌ",
+        "stem": "مِسْطَرَة",
+        "id_meaning": "penggaris",
+        "gender": "f",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "mibroh",
+        "ar": "مِبْرَاةٌ",
+        "stem": "مِبْرَاة",
+        "id_meaning": "rautan",
+        "gender": "f",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "firjar",
+        "ar": "فِرْجَارٌ",
+        "stem": "فِرْجَار",
+        "id_meaning": "jangka",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "qirthas",
+        "ar": "قِرْطَاسٌ",
+        "stem": "قِرْطَاس",
+        "id_meaning": "kertas",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "mimsahah",
+        "ar": "مِمْسَحَةٌ",
+        "stem": "مِمْسَحَة",
+        "id_meaning": "penghapus",
+        "gender": "f",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "miqash",
+        "ar": "مِقَصٌّ",
+        "stem": "مِقَصّ",
+        "id_meaning": "gunting",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "hibr",
+        "ar": "حِبْرٌ",
+        "stem": "حِبْر",
+        "id_meaning": "tinta",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "ghilaf",
+        "ar": "غِلَافٌ",
+        "stem": "غِلَاف",
+        "id_meaning": "sampul",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "daftar",
+        "ar": "دَفْتَرٌ",
+        "stem": "دَفْتَر",
+        "id_meaning": "buku tulis",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      },
+      {
+        "id": "kitab",
+        "ar": "كِتَابٌ",
+        "stem": "كِتَاب",
+        "id_meaning": "buku",
+        "gender": "m",
+        "category": "sekolah",
+        "attachable": true
+      }
+    ],
+    "kelas": [
+      {
+        "id": "fashl",
+        "ar": "فَصْلٌ",
+        "stem": "فَصْل",
+        "id_meaning": "kelas",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "jidar",
+        "ar": "جِدَارٌ",
+        "stem": "جِدَار",
+        "id_meaning": "dinding",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "bab",
+        "ar": "بَابٌ",
+        "stem": "بَاب",
+        "id_meaning": "pintu",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "miftah",
+        "ar": "مِفْتَاحٌ",
+        "stem": "مِفْتَاح",
+        "id_meaning": "kunci",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "mishbah",
+        "ar": "مِصْبَاحٌ",
+        "stem": "مِصْبَاح",
+        "id_meaning": "lampu",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "mukayyif",
+        "ar": "مُكَيِّفٌ",
+        "stem": "مُكَيِّف",
+        "id_meaning": "AC (pendingin ruangan)",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "brojektor",
+        "ar": "بْرُوْجِكْتُرْ",
+        "stem": null,
+        "id_meaning": "proyektor",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": false,
+        "note": "Kata serapan; generator dhamir dimatikan."
+      },
+      {
+        "id": "jaras",
+        "ar": "جَرَسٌ",
+        "stem": "جَرَس",
+        "id_meaning": "bel",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "sabburah",
+        "ar": "سَبُّوْرَةٌ",
+        "stem": "سَبُّوْرَة",
+        "id_meaning": "papan tulis",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "massahah",
+        "ar": "مَسَّاحَةٌ",
+        "stem": "مَسَّاحَة",
+        "id_meaning": "penghapus papan tulis",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true,
+        "note": "Buku juga menulis sinonim طَلَّاسَةٌ."
+      },
+      {
+        "id": "thabsyurah",
+        "ar": "طَبْشُوْرَةٌ",
+        "stem": "طَبْشُوْرَة",
+        "id_meaning": "kapur tulis",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "maktab",
+        "ar": "مَكْتَبٌ",
+        "stem": "مَكْتَب",
+        "id_meaning": "meja (kerja/guru)",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "saah_yadawiyyah",
+        "ar": "سَاعَةٌ يَدَوِيَّةٌ",
+        "stem": null,
+        "id_meaning": "jam tangan",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": false
+      },
+      {
+        "id": "kursi",
+        "ar": "كُرْسِيٌّ",
+        "stem": "كُرْسِيّ",
+        "id_meaning": "kursi",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "raff",
+        "ar": "رَفٌّ",
+        "stem": "رَفّ",
+        "id_meaning": "rak",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "marodh",
+        "ar": "مَعْرَضٌ",
+        "stem": "مَعْرَض",
+        "id_meaning": "lemari pajangan / etalase",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true,
+        "note": "Arti dari gambar buku (lemari kaca)."
+      },
+      {
+        "id": "bithoqoh",
+        "ar": "بِطَاقَةٌ",
+        "stem": "بِطَاقَة",
+        "id_meaning": "kartu",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "khorithoh",
+        "ar": "خَرِيْطَةٌ",
+        "stem": "خَرِيْطَة",
+        "id_meaning": "peta",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "mujam",
+        "ar": "مُعْجَمٌ",
+        "stem": "مُعْجَم",
+        "id_meaning": "kamus",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "mausuah",
+        "ar": "مَوْسُوْعَةٌ",
+        "stem": "مَوْسُوْعَة",
+        "id_meaning": "ensiklopedia",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "shurah",
+        "ar": "صُوْرَةٌ",
+        "stem": "صُوْرَة",
+        "id_meaning": "gambar / foto",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "mulshaq",
+        "ar": "مُلْصَقٌ",
+        "stem": "مُلْصَق",
+        "id_meaning": "lem / perekat",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true,
+        "note": "Gambar di buku = lem. Dalam pemakaian umum مُلْصَق juga berarti poster/stiker."
+      },
+      {
+        "id": "taqwim",
+        "ar": "تَقْوِيْمٌ",
+        "stem": "تَقْوِيْم",
+        "id_meaning": "kalender",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "bisath",
+        "ar": "بِسَاطٌ",
+        "stem": "بِسَاط",
+        "id_meaning": "karpet",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "kasyful_hudhur",
+        "ar": "كَشْفُ الْحُضُوْرِ",
+        "stem": null,
+        "id_meaning": "daftar hadir",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": false
+      },
+      {
+        "id": "majallah_haithiyyah",
+        "ar": "مَجَلَّةٌ حَائِطِيَّةٌ",
+        "stem": null,
+        "id_meaning": "majalah dinding",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": false
+      },
+      {
+        "id": "jadwal_durus",
+        "ar": "جَدْوَلُ الدُّرُوْسِ",
+        "stem": null,
+        "id_meaning": "jadwal pelajaran",
+        "gender": "m",
+        "category": "kelas",
+        "attachable": false
+      },
+      {
+        "id": "kurah_ardhiyyah",
+        "ar": "كُرَةٌ أَرْضِيَّةٌ",
+        "stem": null,
+        "id_meaning": "globe / bola dunia",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": false
+      },
+      {
+        "id": "nafidzah",
+        "ar": "نَافِذَةٌ",
+        "stem": "نَافِذَة",
+        "id_meaning": "jendela",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": true
+      },
+      {
+        "id": "saah_haithiyyah",
+        "ar": "سَاعَةٌ حَائِطِيَّةٌ",
+        "stem": null,
+        "id_meaning": "jam dinding",
+        "gender": "f",
+        "category": "kelas",
+        "attachable": false
+      }
+    ]
+  },
+  "colors": [
+    {
+      "id": "ahmar",
+      "m": "أَحْمَرُ",
+      "f": "حَمْرَاءُ",
+      "id_meaning": "merah",
+      "hex": "#E53935"
+    },
+    {
+      "id": "abyadh",
+      "m": "أَبْيَضُ",
+      "f": "بَيْضَاءُ",
+      "id_meaning": "putih",
+      "hex": "#FFFFFF"
+    },
+    {
+      "id": "azraq",
+      "m": "أَزْرَقُ",
+      "f": "زَرْقَاءُ",
+      "id_meaning": "biru",
+      "hex": "#1E63D6"
+    },
+    {
+      "id": "ashfar",
+      "m": "أَصْفَرُ",
+      "f": "صَفْرَاءُ",
+      "id_meaning": "kuning",
+      "hex": "#FDD835"
+    },
+    {
+      "id": "akhdhar",
+      "m": "أَخْضَرُ",
+      "f": "خَضْرَاءُ",
+      "id_meaning": "hijau",
+      "hex": "#2E9E44"
+    },
+    {
+      "id": "aswad",
+      "m": "أَسْوَدُ",
+      "f": "سَوْدَاءُ",
+      "id_meaning": "hitam",
+      "hex": "#111111"
+    },
+    {
+      "id": "burtuqali",
+      "m": "بُرْتُقَالِيٌّ",
+      "f": "بُرْتُقَالِيَّةٌ",
+      "id_meaning": "oranye",
+      "hex": "#FB8C00"
+    },
+    {
+      "id": "krimi",
+      "m": "كِرِيْمِيٌّ",
+      "f": "كِرِيْمِيَّةٌ",
+      "id_meaning": "krem",
+      "hex": "#F3E3C3"
+    },
+    {
+      "id": "ramadi",
+      "m": "رَمَادِيٌّ",
+      "f": "رَمَادِيَّةٌ",
+      "id_meaning": "abu-abu",
+      "hex": "#8E8E8E"
+    },
+    {
+      "id": "bunni",
+      "m": "بُنِّيٌّ",
+      "f": "بُنِّيَّةٌ",
+      "id_meaning": "cokelat",
+      "hex": "#6D4C41"
+    },
+    {
+      "id": "wardi",
+      "m": "وَرْدِيٌّ",
+      "f": "وَرْدِيَّةٌ",
+      "id_meaning": "merah muda",
+      "hex": "#EC407A"
+    },
+    {
+      "id": "banafsaji",
+      "m": "بَنَفْسَجِيٌّ",
+      "f": "بَنَفْسَجِيَّةٌ",
+      "id_meaning": "ungu",
+      "hex": "#7B1FA2"
+    }
+  ],
+  "pronouns": [
+    {
+      "id": "huwa",
+      "ar": "هُوَ",
+      "suffix": "هُ",
+      "vowel": "ُ",
+      "id_meaning": "dia (lk)",
+      "inda": "عِنْدَهُ"
+    },
+    {
+      "id": "hiya",
+      "ar": "هِيَ",
+      "suffix": "هَا",
+      "vowel": "ُ",
+      "id_meaning": "dia (pr)",
+      "inda": "عِنْدَهَا"
+    },
+    {
+      "id": "anta",
+      "ar": "أَنْتَ",
+      "suffix": "كَ",
+      "vowel": "ُ",
+      "id_meaning": "kamu (lk)",
+      "inda": "عِنْدَكَ"
+    },
+    {
+      "id": "anti",
+      "ar": "أَنْتِ",
+      "suffix": "كِ",
+      "vowel": "ُ",
+      "id_meaning": "kamu (pr)",
+      "inda": "عِنْدَكِ"
+    },
+    {
+      "id": "ana",
+      "ar": "أَنَا",
+      "suffix": "يْ",
+      "vowel": "ِ",
+      "id_meaning": "saya",
+      "inda": "عِنْدِي"
+    },
+    {
+      "id": "nahnu",
+      "ar": "نَحْنُ",
+      "suffix": "نَا",
+      "vowel": "ُ",
+      "id_meaning": "kami / kita",
+      "inda": "عِنْدَنَا"
+    }
+  ],
+  "demonstratives": [
+    {
+      "ar": "هَذَا",
+      "id_meaning": "ini (lk)",
+      "gender": "m",
+      "distance": "dekat"
+    },
+    {
+      "ar": "هَذِهِ",
+      "id_meaning": "ini (pr)",
+      "gender": "f",
+      "distance": "dekat"
+    },
+    {
+      "ar": "ذَلِكَ",
+      "id_meaning": "itu (lk)",
+      "gender": "m",
+      "distance": "jauh"
+    },
+    {
+      "ar": "تِلْكَ",
+      "id_meaning": "itu (pr)",
+      "gender": "f",
+      "distance": "jauh"
+    }
+  ],
+  "expressions": [
+    {
+      "ar": "مَا لَوْنُ ...؟",
+      "id_meaning": "Apa warna ...?"
+    },
+    {
+      "ar": "لَوْنُ الْكِتَابِ أَصْفَرُ",
+      "id_meaning": "Warna buku itu kuning"
+    },
+    {
+      "ar": "الْكِتَابُ لَوْنُهُ أَصْفَرُ",
+      "id_meaning": "Buku itu warnanya kuning"
+    },
+    {
+      "ar": "الْوَرْدَةُ لَوْنُهَا أَحْمَرُ",
+      "id_meaning": "Mawar itu warnanya merah"
+    },
+    {
+      "ar": "هَلْ هَذَا قَلَمُكَ؟",
+      "id_meaning": "Apakah ini penamu?"
+    },
+    {
+      "ar": "لَا، قَلَمِي لَوْنُهُ أَصْفَرُ",
+      "id_meaning": "Bukan, penaku warnanya kuning"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "dhamir_muttashil",
+      "title": "Isim Dhamir Muttashil (الضَّمِيْرُ الْمُتَّصِلُ)",
+      "summary": "Kata ganti yang menempel di akhir kata benda untuk menunjukkan kepemilikan.",
+      "table_example_base": "بَاب",
+      "rows": [
+        {
+          "pronoun": "هُوَ",
+          "suffix": "ـهُ",
+          "result": "بَابُهُ",
+          "id_meaning": "pintunya (lk)"
+        },
+        {
+          "pronoun": "هِيَ",
+          "suffix": "ـهَا",
+          "result": "بَابُهَا",
+          "id_meaning": "pintunya (pr)"
+        },
+        {
+          "pronoun": "أَنْتَ",
+          "suffix": "ـكَ",
+          "result": "بَابُكَ",
+          "id_meaning": "pintumu (lk)"
+        },
+        {
+          "pronoun": "أَنْتِ",
+          "suffix": "ـكِ",
+          "result": "بَابُكِ",
+          "id_meaning": "pintumu (pr)"
+        },
+        {
+          "pronoun": "أَنَا",
+          "suffix": "ـيْ",
+          "result": "بَابِيْ",
+          "id_meaning": "pintuku"
+        },
+        {
+          "pronoun": "نَحْنُ",
+          "suffix": "ـنَا",
+          "result": "بَابُنَا",
+          "id_meaning": "pintu kami/kita"
+        }
+      ],
+      "rules": [
+        "Kata benda yang sudah diberi dhamir muttashil TIDAK boleh diawali ال. Salah: الْكُرْسِيُّهُ — Benar: كُرْسِيُّهُ.",
+        "Tanwin dihapus saat dhamir ditempelkan.",
+        "Ta marbuthah (ة) berubah jadi ta (ت): صُوْرَةٌ → صُوْرَتُكَ, سَبُّوْرَةٌ → سَبُّوْرَتُكِ.",
+        "Untuk أَنَا, huruf terakhir kata benda berharakat kasrah: بَابِيْ, حِبْرِيْ, خَرِيْطَتِيْ."
+      ],
+      "wrong_right": [
+        [
+          "الْكُرْسِيُّهُ",
+          "كُرْسِيُّهُ"
+        ],
+        [
+          "الْمَكْتَبُهَا",
+          "مَكْتَبُهَا"
+        ],
+        [
+          "الصُّوْرَتُكَ",
+          "صُوْرَتُكَ"
+        ],
+        [
+          "السَّبُّوْرَتُكِ",
+          "سَبُّوْرَتُكِ"
+        ],
+        [
+          "الْخَرِيْطَتِيْ",
+          "خَرِيْطَتِيْ"
+        ],
+        [
+          "الْفَصْلُنَا",
+          "فَصْلُنَا"
+        ]
+      ]
+    },
+    {
+      "id": "lawn",
+      "title": "Menyatakan Warna (لَوْنٌ)",
+      "patterns": [
+        {
+          "name": "Pola 1: لَوْنُ + benda + warna",
+          "example": "لَوْنُ الْكِتَابِ أَصْفَرُ",
+          "id_meaning": "Warna buku itu kuning",
+          "rule": "Benda terletak setelah لَوْنُ (idhafah). Warna SELALU bentuk mudzakkar karena لَوْنٌ mudzakkar, walau bendanya mu'annats: لَوْنُ الْوَرْدَةِ أَحْمَرُ."
+        },
+        {
+          "name": "Pola 2: benda + لَوْنُ+dhamir + warna",
+          "example": "السَّاعَةُ لَوْنُهَا أَسْوَدُ",
+          "id_meaning": "Jam itu warnanya hitam",
+          "rule": "Benda didahulukan, لَوْنُ disambung dhamir yang kembali ke benda: ـهُ untuk benda mudzakkar, ـهَا untuk mu'annats. Warna tetap mudzakkar. Strukturnya Mubtada' + Khabar."
+        },
+        {
+          "name": "Pola 3: tanpa لَوْنُ",
+          "example": "الْوَرْدَةُ حَمْرَاءُ / وَرْدَةٌ حَمْرَاءُ",
+          "id_meaning": "Mawar itu merah / mawar yang merah",
+          "rule": "Warna menyesuaikan gender benda: benda mudzakkar → warna mudzakkar (الْكِتَابُ أَحْمَرُ), benda mu'annats → warna mu'annats (الْوَرْدَةُ حَمْرَاءُ)."
+        }
+      ],
+      "color_form_rule": "Warna dasar pola أَفْعَلُ (mudzakkar) ↔ فَعْلَاءُ (mu'annats): أَحْمَرُ ↔ حَمْرَاءُ. Warna berakhiran ـِيٌّ (nisbah) mu'annats-nya ditambah ة: بُنِّيٌّ ↔ بُنِّيَّةٌ."
+    }
+  ],
+  "texts": {
+    "_note": "Teks di bawah adalah TEKS ORISINAL pengganti (bukan salinan buku), dibuat dengan kosakata & struktur Bab 3. Kalau mau pakai teks asli buku (hal. 57–58), isi field 'book_text' sendiri dari buku. Wajib dicek guru.",
+    "nash": [
+      {
+        "id": "nash1",
+        "title": "Tas dan Isinya",
+        "ar": "اِسْمِي أَحْمَدُ، أَنَا تِلْمِيْذٌ فِي الْفَصْلِ السَّابِعِ. عِنْدِي حَقِيْبَةٌ لَوْنُهَا أَزْرَقُ. فِي حَقِيْبَتِي كِتَابٌ وَدَفْتَرٌ وَمَقْلَمَةٌ. لَوْنُ الْمَقْلَمَةِ أَحْمَرُ، فِيْهَا قَلَمٌ وَمِرْسَمٌ وَمِمْسَحَةٌ وَمِبْرَاةٌ. وَهَذِهِ صَدِيْقَتِي فَاطِمَةُ، عِنْدَهَا حَقِيْبَةٌ لَوْنُهَا وَرْدِيٌّ، فِيْهَا مِسْطَرَةٌ وَمِقَصٌّ وَفِرْجَارٌ.",
+        "translation": "Namaku Ahmad, aku siswa di kelas tujuh. Aku punya tas yang warnanya biru. Di dalam tasku ada buku, buku tulis, dan kotak pensil. Warna kotak pensilnya merah, di dalamnya ada pena, pensil, penghapus, dan rautan. Dan ini temanku Fatimah, dia punya tas yang warnanya merah muda, di dalamnya ada penggaris, gunting, dan jangka.",
+        "book_text": null
+      },
+      {
+        "id": "nash2",
+        "title": "Kelas Kami",
+        "ar": "هَذَا فَصْلُنَا. فَصْلُنَا نَظِيْفٌ وَجَمِيْلٌ. فِيْهِ بَابٌ وَنَافِذَةٌ وَسَبُّوْرَةٌ وَمَكْتَبٌ وَكَرَاسِيُّ. لَوْنُ الْجِدَارِ أَبْيَضُ، وَالسَّبُّوْرَةُ لَوْنُهَا أَسْوَدُ. عَلَى الْجِدَارِ سَاعَةٌ حَائِطِيَّةٌ وَخَرِيْطَةٌ وَتَقْوِيْمٌ. وَفِي الْفَصْلِ رَفٌّ، عَلَيْهِ مُعْجَمٌ وَمَوْسُوْعَةٌ.",
+        "translation": "Ini kelas kami. Kelas kami bersih dan indah. Di dalamnya ada pintu, jendela, papan tulis, meja, dan kursi-kursi. Warna dindingnya putih, dan papan tulisnya warnanya hitam. Di dinding ada jam dinding, peta, dan kalender. Dan di kelas ada rak, di atasnya ada kamus dan ensiklopedia.",
+        "book_text": null
+      }
+    ],
+    "hiwar": [
+      {
+        "id": "hiwar1",
+        "title": "Hiwar antara Zaid dan Umar",
+        "book_text": null,
+        "lines": [
+          {
+            "speaker": "زَيْدٌ",
+            "ar": "السَّلَامُ عَلَيْكُمْ يَا عُمَرُ.",
+            "translation": "Assalamu'alaikum, Umar."
+          },
+          {
+            "speaker": "عُمَرُ",
+            "ar": "وَعَلَيْكُمُ السَّلَامُ يَا زَيْدُ.",
+            "translation": "Wa'alaikumussalam, Zaid."
+          },
+          {
+            "speaker": "زَيْدٌ",
+            "ar": "هَلْ هَذَا قَلَمُكَ؟",
+            "translation": "Apakah ini penamu?"
+          },
+          {
+            "speaker": "عُمَرُ",
+            "ar": "لَا، قَلَمِي لَوْنُهُ أَسْوَدُ. هَذَا قَلَمُ أَحْمَدَ.",
+            "translation": "Bukan, penaku warnanya hitam. Ini pena Ahmad."
+          },
+          {
+            "speaker": "زَيْدٌ",
+            "ar": "مَا لَوْنُ حَقِيْبَتِكَ؟",
+            "translation": "Apa warna tasmu?"
+          },
+          {
+            "speaker": "عُمَرُ",
+            "ar": "حَقِيْبَتِي لَوْنُهَا بُنِّيٌّ. وَأَنْتَ، مَا لَوْنُ حَقِيْبَتِكَ؟",
+            "translation": "Tasku warnanya cokelat. Kalau kamu, apa warna tasmu?"
+          },
+          {
+            "speaker": "زَيْدٌ",
+            "ar": "لَوْنُ حَقِيْبَتِي أَزْرَقُ.",
+            "translation": "Warna tasku biru."
+          },
+          {
+            "speaker": "عُمَرُ",
+            "ar": "مَاذَا فِي حَقِيْبَتِكَ؟",
+            "translation": "Apa yang ada di tasmu?"
+          },
+          {
+            "speaker": "زَيْدٌ",
+            "ar": "فِيْهَا كِتَابٌ وَدَفْتَرٌ وَمَقْلَمَةٌ.",
+            "translation": "Di dalamnya ada buku, buku tulis, dan kotak pensil."
+          },
+          {
+            "speaker": "عُمَرُ",
+            "ar": "شُكْرًا يَا زَيْدُ.",
+            "translation": "Terima kasih, Zaid."
+          },
+          {
+            "speaker": "زَيْدٌ",
+            "ar": "عَفْوًا.",
+            "translation": "Sama-sama."
+          }
+        ]
+      }
+    ]
+  },
+  "quiz_bank": {
+    "_note": "Soal orisinal berbasis kaidah Bab 3. Generator otomatis (lihat SKILL.md) menambah soal dari data vocab/colors/pronouns.",
+    "lawn_pronoun": [
+      {
+        "q": "هَذَا الْقَلَمُ ... أَحْمَرُ",
+        "options": [
+          "لَوْنُهُ",
+          "لَوْنُهَا"
+        ],
+        "answer": "لَوْنُهُ"
+      },
+      {
+        "q": "هَذِهِ الْحَقِيْبَةُ ... بُنِّيٌّ",
+        "options": [
+          "لَوْنُهُ",
+          "لَوْنُهَا"
+        ],
+        "answer": "لَوْنُهَا"
+      },
+      {
+        "q": "ذَلِكَ الْمُعْجَمُ ... أَخْضَرُ",
+        "options": [
+          "لَوْنُهُ",
+          "لَوْنُهَا"
+        ],
+        "answer": "لَوْنُهُ"
+      },
+      {
+        "q": "تِلْكَ الْمِسْطَرَةُ ... وَرْدِيٌّ",
+        "options": [
+          "لَوْنُهُ",
+          "لَوْنُهَا"
+        ],
+        "answer": "لَوْنُهَا"
+      }
+    ],
+    "lawn_color_form": [
+      {
+        "q": "لَوْنُ الْمِمْسَحَةِ ...",
+        "options": [
+          "أَبْيَضُ",
+          "بَيْضَاءُ"
+        ],
+        "answer": "أَبْيَضُ",
+        "why": "Setelah لَوْنُ, warna selalu mudzakkar."
+      },
+      {
+        "q": "الْخَرِيْطَةُ لَوْنُهَا ...",
+        "options": [
+          "أَصْفَرُ",
+          "صَفْرَاءُ"
+        ],
+        "answer": "أَصْفَرُ",
+        "why": "Pola لَوْنُهَا: warna tetap mudzakkar."
+      },
+      {
+        "q": "هَذِهِ سَبُّوْرَةٌ ...",
+        "options": [
+          "أَسْوَدُ",
+          "سَوْدَاءُ"
+        ],
+        "answer": "سَوْدَاءُ",
+        "why": "Tanpa لَوْنُ: warna ikut gender benda (mu'annats)."
+      },
+      {
+        "q": "هَذَا رَفٌّ ...",
+        "options": [
+          "أَبْيَضُ",
+          "بَيْضَاءُ"
+        ],
+        "answer": "أَبْيَضُ",
+        "why": "Tanpa لَوْنُ: benda mudzakkar → warna mudzakkar."
+      }
+    ],
+    "dhamir_choose": [
+      {
+        "q": "أَنَا",
+        "options": [
+          "مَكْتَبُهُ",
+          "مَكْتَبُهَا",
+          "مَكْتَبُكَ",
+          "مَكْتَبِيْ"
+        ],
+        "answer": "مَكْتَبِيْ"
+      },
+      {
+        "q": "نَحْنُ",
+        "options": [
+          "فَصْلُهُ",
+          "فَصْلُكِ",
+          "فَصْلُنَا",
+          "فَصْلِيْ"
+        ],
+        "answer": "فَصْلُنَا"
+      },
+      {
+        "q": "أَنْتِ",
+        "options": [
+          "صُوْرَتُكِ",
+          "صُوْرَتُكَ",
+          "صُوْرَتُهُ",
+          "صُوْرَتِيْ"
+        ],
+        "answer": "صُوْرَتُكِ"
+      },
+      {
+        "q": "هِيَ",
+        "options": [
+          "خَرِيْطَتُهُ",
+          "خَرِيْطَتُهَا",
+          "خَرِيْطَتُنَا",
+          "خَرِيْطَتُكَ"
+        ],
+        "answer": "خَرِيْطَتُهَا"
+      }
+    ],
+    "fix_al": [
+      {
+        "wrong": "الْكِتَابُكَ",
+        "right": "كِتَابُكَ"
+      },
+      {
+        "wrong": "الْمِسْطَرَتُهَا",
+        "right": "مِسْطَرَتُهَا"
+      },
+      {
+        "wrong": "الدَّفْتَرِيْ",
+        "right": "دَفْتَرِيْ"
+      }
+    ]
+  },
+  "istima": {
+    "_note": "Skrip istima' tadrib 4 ada di buku hal. 142 (PDF hal. 148). Tadrib 1–3 dibacakan guru tanpa skrip tertulis — di web pakai TTS/rekaman dari data vocab & colors.",
+    "known_issue": "Soal istima' tadrib 4 no. 6 (لَوْنُ الْحَائِطِ): skrip buku menyebut أَخْضَرُ, tapi pilihan jawaban (أَبْيَضُ - أَحْمَرُ - أَزْرَقُ) tidak memuatnya. Kemungkinan salah cetak — jangan disalin mentah."
+  },
+  "book_structure": [
+    {
+      "section": "النَّشَاطُ الْأَوَّلُ — Bangun Pengetahuanmu",
+      "parts": [
+        "المفردات (alat sekolah, perangkat kelas, warna, kosakata lain عِنْدَ + dhamir) + tadrib 1–4",
+        "النصوص (2 teks) + tadrib",
+        "الحوار + tadrib 1–3",
+        "التركيب (dhamir muttashil, warna) + tadrib 1–13",
+        "الاستماع + tadrib 1–4"
+      ]
+    },
+    {
+      "section": "النَّشَاطُ الثَّانِي — Pemodelan Teks",
+      "parts": [
+        "Baca, pahami, diskusikan, bandingkan teks; terjemahkan; tulis bagian teks sesuai struktur"
+      ]
+    },
+    {
+      "section": "النَّشَاطُ الثَّالِثُ — Produksi Teks Berkelompok",
+      "parts": [
+        "Kelompok 4–5 orang, tiap anggota 1–2 kalimat dengan kata kunci berbeda, tashih, gabung jadi paragraf"
+      ]
+    },
+    {
+      "section": "النَّشَاطُ الرَّابِعُ — Produksi Teks Mandiri",
+      "parts": [
+        "Rencana, tentukan jenis & tema teks, susun paragraf, tashih, tulis ulang"
+      ]
+    }
+  ],
+  "grammar_words": {
+    "_note": "DITAMBAHKAN AGENT (bukan dari JSON awal) untuk generator kalimat & label UI. WAJIB dicek guru.",
+    "lawn": "لَوْنٌ",
+    "lawn_stem": "لَوْن",
+    "lawn_meaning": "warna",
+    "mudzakkar": "مُذَكَّرٌ",
+    "muannats": "مُؤَنَّثٌ"
+  },
+  "comprehension": {
+    "_note": "Soal pemahaman ORISINAL untuk texts.nash, DITAMBAHKAN AGENT. Opsi Arab disalin dari vocab/colors. WAJIB dicek guru.",
+    "nash1": [
+      {
+        "q": "Ahmad siswa kelas berapa?",
+        "options_lang": "id",
+        "options": [
+          "Kelas tujuh",
+          "Kelas delapan",
+          "Kelas sembilan"
+        ],
+        "answer": "Kelas tujuh",
+        "why": "Ahmad bilang: أَنَا تِلْمِيْذٌ فِي الْفَصْلِ السَّابِعِ (kelas tujuh)."
+      },
+      {
+        "q": "Apa warna tas Ahmad?",
+        "options_lang": "ar",
+        "options": [
+          "أَزْرَقُ",
+          "أَحْمَرُ",
+          "وَرْدِيٌّ"
+        ],
+        "answer": "أَزْرَقُ",
+        "why": "عِنْدِي حَقِيْبَةٌ لَوْنُهَا أَزْرَقُ — tas Ahmad warnanya biru."
+      },
+      {
+        "q": "Apa warna kotak pensil Ahmad?",
+        "options_lang": "ar",
+        "options": [
+          "أَحْمَرُ",
+          "أَزْرَقُ",
+          "أَخْضَرُ"
+        ],
+        "answer": "أَحْمَرُ",
+        "why": "لَوْنُ الْمَقْلَمَةِ أَحْمَرُ — kotak pensilnya merah."
+      },
+      {
+        "q": "Benda apa yang TIDAK ada di kotak pensil Ahmad?",
+        "options_lang": "ar",
+        "options": [
+          "قَلَمٌ",
+          "مِرْسَمٌ",
+          "مِقَصٌّ",
+          "مِبْرَاةٌ"
+        ],
+        "answer": "مِقَصٌّ",
+        "why": "Gunting (مِقَصٌّ) ada di tas Fatimah, bukan di kotak pensil Ahmad."
+      },
+      {
+        "q": "Apa warna tas Fatimah?",
+        "options_lang": "ar",
+        "options": [
+          "وَرْدِيٌّ",
+          "أَزْرَقُ",
+          "أَسْوَدُ"
+        ],
+        "answer": "وَرْدِيٌّ",
+        "why": "عِنْدَهَا حَقِيْبَةٌ لَوْنُهَا وَرْدِيٌّ — tas Fatimah merah muda."
+      }
+    ],
+    "nash2": [
+      {
+        "q": "Bagaimana keadaan kelas mereka?",
+        "options_lang": "id",
+        "options": [
+          "Bersih dan indah",
+          "Kotor dan sempit",
+          "Gelap dan kecil"
+        ],
+        "answer": "Bersih dan indah",
+        "why": "فَصْلُنَا نَظِيْفٌ وَجَمِيْلٌ — kelas kami bersih dan indah."
+      },
+      {
+        "q": "Apa warna dinding kelas?",
+        "options_lang": "ar",
+        "options": [
+          "أَبْيَضُ",
+          "أَسْوَدُ",
+          "أَخْضَرُ"
+        ],
+        "answer": "أَبْيَضُ",
+        "why": "لَوْنُ الْجِدَارِ أَبْيَضُ — dindingnya putih."
+      },
+      {
+        "q": "Apa warna papan tulisnya?",
+        "options_lang": "ar",
+        "options": [
+          "أَسْوَدُ",
+          "أَبْيَضُ",
+          "بُنِّيٌّ"
+        ],
+        "answer": "أَسْوَدُ",
+        "why": "السَّبُّوْرَةُ لَوْنُهَا أَسْوَدُ — papan tulisnya hitam."
+      },
+      {
+        "q": "Benda apa yang ada di dinding?",
+        "options_lang": "ar",
+        "options": [
+          "خَرِيْطَةٌ",
+          "مُعْجَمٌ",
+          "بِسَاطٌ"
+        ],
+        "answer": "خَرِيْطَةٌ",
+        "why": "عَلَى الْجِدَارِ ... خَرِيْطَةٌ — di dinding ada peta."
+      },
+      {
+        "q": "Apa yang ada di atas rak?",
+        "options_lang": "ar",
+        "options": [
+          "مُعْجَمٌ",
+          "تَقْوِيْمٌ",
+          "جَرَسٌ"
+        ],
+        "answer": "مُعْجَمٌ",
+        "why": "عَلَيْهِ مُعْجَمٌ وَمَوْسُوْعَةٌ — di atas rak ada kamus dan ensiklopedia."
+      }
+    ]
+  }
+}

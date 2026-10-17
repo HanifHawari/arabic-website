@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Design token tema. Swatch warna materi TIDAK di sini — pakai `hex` dari JSON. */
+:root {
+  --background: #faf8f3;
+  --foreground: #1c1917;
+  --surface: #ffffff;
+  --muted: #57534e;
+  --border: #e7e2d9;
+  --primary: #0f766e;
+  --primary-foreground: #ffffff;
+  --notice-bg: #fef3c7;
+  --notice-fg: #78350f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #12110f;
+    --foreground: #f5f5f4;
+    --surface: #1c1b19;
+    --muted: #a8a29e;
+    --border: #2e2c29;
+    --primary: #2dd4bf;
+    --primary-foreground: #042f2e;
+    --notice-bg: #3a2a0a;
+    --notice-fg: #fde68a;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-notice-bg: var(--notice-bg);
+  --color-notice-fg: var(--notice-fg);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Ukuran teks Arab: min 28px kata tunggal, 22px paragraf, line-height ≥ 1.9.
+     --arabic-scale dinaikkan di Mode Kelas. */
+  --text-arabic-word: calc(1.75rem * var(--arabic-scale));
+  --text-arabic-word--line-height: 2;
+  --text-arabic-para: calc(1.375rem * var(--arabic-scale));
+  --text-arabic-para--line-height: 2.1;
+  --text-arabic-hero: calc(2.75rem * var(--arabic-scale));
+  --text-arabic-hero--line-height: 1.9;
+}
+
+:root {
+  --arabic-scale: 1;
+  /* Font Arab di-load lewat next/font (variable --font-naskh) di app/layout.tsx. */
+  --font-arabic: var(--font-naskh), "Noto Naskh Arabic", "Amiri", serif;
+}
+
+/* Area yang bisa digeser ke samping tanpa scrollbar yang terlihat (mis. menu modul di HP). */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility font-arabic {
+  font-family: var(--font-arabic);
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  /* Semua blok Arab: font naskh + line-height lega supaya harakat tidak bertabrakan/terpotong. */
+  [lang="ar"] {
+    font-family: var(--font-arabic);
+    line-height: 2;
+    overflow: visible;
+  }
+}
+
+@keyframes step-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Mode Kelas (F10): teks Arab ekstra besar untuk proyektor, navigasi disembunyikan. */
+:root[data-class-mode="on"] {
+  --arabic-scale: 1.6;
+}
+:root[data-class-mode="on"] .hide-in-class {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+}
