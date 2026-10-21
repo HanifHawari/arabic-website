@@ -319,7 +319,7 @@ export function RecorderView() {
           </select>
           <ToggleSwitch label="Hanya yang belum" checked={onlyMissing} onChange={setOnlyMissing} />
         </div>
-        <ul className="divide-y divide-border rounded-2xl border border-border bg-surface">
+        <ul className="divide-y divide-border card rounded-2xl">
           {visible.map((item: AudioItem) => {
             const saved = fileFor(item.key);
             const active = item.key === current.key;

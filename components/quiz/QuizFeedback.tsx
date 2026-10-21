@@ -7,9 +7,9 @@ export function QuizFeedback({ question, correct }: { question: Question; correc
   return (
     <div
       role="status"
-      className={`space-y-2 rounded-2xl border-2 p-4 ${correct ? 'border-emerald-600 bg-emerald-600/10' : 'border-red-600 bg-red-600/10'}`}
+      className={`space-y-2 rounded-3xl border-2 p-4 ${correct ? 'border-emerald-600 bg-emerald-600/10' : 'border-red-600 bg-red-600/10'}`}
     >
-      <p className="font-bold">{correct ? '✅ Benar! Mantap.' : '❌ Belum tepat.'}</p>
+      <p className="font-display text-lg font-bold">{correct ? '✅ Benar! Mantap.' : '❌ Belum tepat.'}</p>
       {!correct && question.kind !== 'match' && (
         <p>
           Jawaban benar:{' '}

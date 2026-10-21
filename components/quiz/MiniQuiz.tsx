@@ -25,9 +25,9 @@ export function MiniQuiz({ title, types, count = 3, done, onFinish }: MiniQuizPr
   };
 
   return (
-    <section className="space-y-3 rounded-2xl border-2 border-primary/30 bg-surface p-4">
+    <section className="card space-y-3 rounded-3xl p-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h3 className="text-lg font-bold">{title}</h3>
+        <h3 className="font-display text-lg font-semibold">📝 {title}</h3>
         {done && <span className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">✓ Sudah dikerjakan</span>}
       </div>
       {questions ? (
@@ -45,7 +45,7 @@ export function MiniQuiz({ title, types, count = 3, done, onFinish }: MiniQuizPr
         <button
           type="button"
           onClick={start}
-          className="rounded-full bg-primary px-5 py-2.5 font-semibold text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="w-full rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground active:scale-[0.98] sm:w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           Mulai {count} soal
         </button>

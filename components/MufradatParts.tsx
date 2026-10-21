@@ -48,29 +48,39 @@ export function ItemVisual({ item }: { item: MufradatItem }) {
   );
 }
 
-/** Arti, gender, catatan, contoh. */
-export function ItemDetails({ item }: { item: MufradatItem }) {
+/** Catatan dari data (kata ambigu) dan contoh عِنْدَ + benda. */
+export function ItemExtra({ item }: { item: MufradatItem }) {
   const pronounIndex = item.kind === 'inda' ? content.pronouns.indexOf(item.pronoun) : -1;
   const exampleNoun = pronounIndex >= 0 ? content.vocab.sekolah[pronounIndex % content.vocab.sekolah.length] : null;
 
+  if (item.kind === 'vocab' && item.vocab.note) {
+    return (
+      <p className="rounded-lg bg-notice-bg px-3 py-2 text-left text-xs text-notice-fg">
+        <span className="font-semibold">Catatan:</span> <MixedText text={item.vocab.note} />
+      </p>
+    );
+  }
+  if (item.kind === 'inda' && exampleNoun) {
+    return (
+      <p className="rounded-lg bg-surface-alt px-3 py-1 text-sm text-muted">
+        <span className="font-semibold text-primary">Contoh:</span>{' '}
+        <ArabicText as="bdi" className="text-xl text-foreground">
+          {indaExample(item.pronoun, exampleNoun)}
+        </ArabicText>{' '}
+        = {item.pronoun.id_meaning} punya {exampleNoun.id_meaning}
+      </p>
+    );
+  }
+  return null;
+}
+
+/** Arti, gender, catatan, contoh. */
+export function ItemDetails({ item }: { item: MufradatItem }) {
   return (
     <div className="space-y-2 text-center">
       <p className="text-lg font-semibold">{meaningOf(item)}</p>
       {item.kind === 'vocab' && <GenderBadge gender={item.vocab.gender} />}
-      {item.kind === 'vocab' && item.vocab.note && (
-        <p className="rounded-lg bg-notice-bg px-3 py-2 text-left text-xs text-notice-fg">
-          <span className="font-semibold">Catatan:</span> <MixedText text={item.vocab.note} />
-        </p>
-      )}
-      {item.kind === 'inda' && exampleNoun && (
-        <p className="text-sm text-muted">
-          Contoh:{' '}
-          <ArabicText as="bdi" className="text-xl text-foreground">
-            {indaExample(item.pronoun, exampleNoun)}
-          </ArabicText>{' '}
-          = {item.pronoun.id_meaning} punya {exampleNoun.id_meaning}
-        </p>
-      )}
+      <ItemExtra item={item} />
     </div>
   );
 }

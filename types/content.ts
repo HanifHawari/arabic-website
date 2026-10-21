@@ -148,6 +148,18 @@ export interface GrammarWords {
   muannats: string;
 }
 
+/** Judul Arab tiap modul (ditambahkan agent, wajib dicek guru). Kunci = ModuleId. */
+export interface ModuleTitles {
+  _note?: string;
+  mufradat: string;
+  nushush: string;
+  hiwar: string;
+  tarkib: string;
+  latihan: string;
+  istima: string;
+  produksi: string;
+}
+
 export interface ComprehensionQuestion {
   q: string;
   options_lang: 'ar' | 'id';
@@ -178,5 +190,6 @@ export interface Bab3Content {
   istima: { _note?: string; known_issue?: string };
   book_structure: BookSection[];
   grammar_words: GrammarWords;
+  module_titles: ModuleTitles;
   comprehension: Comprehension;
 }

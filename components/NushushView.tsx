@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { NashReader } from '@/components/NashReader';
+import { NextModuleLink } from '@/components/NextModuleLink';
+import { PageHero } from '@/components/PageHero';
 import { QuizRunner } from '@/components/quiz/QuizRunner';
 import { Tabs } from '@/components/Tabs';
 import { useModuleVisit, useProgress } from '@/hooks/useProgress';
@@ -37,7 +39,15 @@ export function NushushView() {
 
   return (
     <div className="space-y-5">
-      <h1 className="text-2xl font-bold">Nushush (Teks Bacaan)</h1>
+      <PageHero
+        moduleId="nushush"
+        title="Nushush (Teks Bacaan)"
+        description="Baca, dengarkan, ketuk kata untuk melihat artinya, lalu jawab soal pemahaman."
+      >
+        <span className="inline-flex rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold text-accent-foreground">
+          📖 {content.texts.nash.length} teks + audio
+        </span>
+      </PageHero>
       <Tabs
         tabs={TABS}
         value={tab}
@@ -51,9 +61,14 @@ export function NushushView() {
       <div id="nushush-panel" role="tabpanel" aria-labelledby={`nushush-tab-${tab}`} className="space-y-6">
         <NashReader key={nash.id} nash={nash} />
 
-        <section className="space-y-3 rounded-2xl border-2 border-primary/30 bg-surface p-4">
+        <section className="card space-y-3 rounded-3xl p-4 sm:p-5">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <h2 className="text-lg font-bold">Soal pemahaman</h2>
+            <h2 className="flex items-center gap-2 font-display text-lg font-semibold">
+              <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-soft text-base">
+                ❓
+              </span>
+              Soal pemahaman
+            </h2>
             {isDone(progress, flag(nash.id)) && (
               <span className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">✓ Sudah dikerjakan</span>
             )}
@@ -73,13 +88,14 @@ export function NushushView() {
             <button
               type="button"
               onClick={() => setQuiz({ id: Date.now(), questions: questionsFor(nash.id) })}
-              className="rounded-full bg-primary px-5 py-2.5 font-semibold text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="w-full rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto"
             >
               Kerjakan {comprehensionFor(content, nash.id).length} soal
             </button>
           )}
         </section>
       </div>
+      <NextModuleLink href="/hiwar" label="Lanjut ke Hiwar" sub="Dialog tentang barang & warnanya" />
     </div>
   );
 }

@@ -43,10 +43,10 @@ export function RolePlay({ hiwar, speakers, rate, onFinish }: RolePlayProps) {
 
   if (!role) {
     return (
-      <div className="space-y-3 rounded-2xl border border-border bg-surface p-4">
+      <div className="space-y-3 card rounded-3xl p-4">
         <p className="font-semibold">Kamu mau jadi siapa?</p>
-        <div className="flex flex-wrap gap-2">
-          {speakers.map((s) => (
+        <div className="grid grid-cols-2 gap-2">
+          {speakers.map((s, i) => (
             <button
               key={s}
               type="button"
@@ -55,9 +55,12 @@ export function RolePlay({ hiwar, speakers, rate, onFinish }: RolePlayProps) {
                 setIdx(0);
                 if (lines[0].speaker !== s && canPlay(lines[0].ar)) void play(lines[0].ar, rate);
               }}
-              className="rounded-full border-2 border-primary px-5 py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="flex flex-col items-center rounded-2xl border-2 border-border bg-surface-alt px-3 py-2 transition-colors hover:border-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              <ArabicText className="text-2xl">{s}</ArabicText>
+              <span aria-hidden="true" className="text-3xl">
+                {i === 0 ? '🧑' : '🧒'}
+              </span>
+              <ArabicText className="text-arabic-word text-primary">{s}</ArabicText>
             </button>
           ))}
         </div>

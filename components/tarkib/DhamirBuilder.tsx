@@ -22,7 +22,7 @@ export function DhamirBuilder() {
   const meaning = possessiveMeaning(content, noun.id_meaning, pronoun);
 
   return (
-    <div className="space-y-4 rounded-2xl border border-border bg-surface p-4">
+    <div className="space-y-4 card rounded-2xl p-4">
       <h3 className="text-lg font-bold">🧪 Pembentuk Dhamir</h3>
       <NounSelect nouns={NOUNS} value={nounId} onChange={setNounId} />
       <fieldset>

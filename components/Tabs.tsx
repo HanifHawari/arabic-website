@@ -3,15 +3,18 @@
 import { useRef } from 'react';
 
 interface TabsProps<T extends string> {
-  tabs: readonly { id: T; label: string }[];
+  tabs: readonly { id: T; label: string; count?: number }[];
   value: T;
   onChange: (id: T) => void;
   label: string;
   idPrefix: string;
+  /** 'segmented' = kotak terbagi rata; 'chips' = deretan pil yang bisa digeser (HP). */
+  variant?: 'segmented' | 'chips';
 }
 
 /** Tablist ARIA dengan roving tabindex (panah kiri/kanan, Home/End). */
-export function Tabs<T extends string>({ tabs, value, onChange, label, idPrefix }: TabsProps<T>) {
+export function Tabs<T extends string>({ tabs, value, onChange, label, idPrefix, variant = 'segmented' }: TabsProps<T>) {
+  const chips = variant === 'chips';
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const onKeyDown = (e: React.KeyboardEvent, i: number) => {
@@ -28,7 +31,15 @@ export function Tabs<T extends string>({ tabs, value, onChange, label, idPrefix 
   };
 
   return (
-    <div role="tablist" aria-label={label} className="grid grid-cols-2 gap-1 rounded-2xl bg-border/50 p-1 sm:flex">
+    <div
+      role="tablist"
+      aria-label={label}
+      className={
+        chips
+          ? 'scrollbar-none -mx-4 flex gap-2 overflow-x-auto px-4 py-0.5'
+          : `grid gap-1 rounded-2xl bg-surface-alt p-1 sm:flex ${tabs.length === 3 ? 'grid-cols-3' : 'grid-cols-2'}`
+      }
+    >
       {tabs.map((t, i) => {
         const selected = t.id === value;
         return (
@@ -45,11 +56,22 @@ export function Tabs<T extends string>({ tabs, value, onChange, label, idPrefix 
             tabIndex={selected ? 0 : -1}
             onClick={() => onChange(t.id)}
             onKeyDown={(e) => onKeyDown(e, i)}
-            className={`flex-1 whitespace-nowrap rounded-xl px-3 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary ${
-              selected ? 'bg-surface shadow-sm' : 'text-muted hover:text-foreground'
+            className={`whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary ${
+              chips ? 'inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 py-1.5' : 'flex-1 rounded-xl px-3 py-2'
+            } ${
+              selected
+                ? `bg-primary font-semibold text-primary-foreground shadow-sm ${chips ? 'border-primary' : ''}`
+                : `text-muted hover:text-foreground ${chips ? 'border-border bg-surface' : ''}`
             }`}
           >
             {t.label}
+            {t.count !== undefined && (
+              <span
+                className={`rounded-full px-1.5 text-xs font-bold ${selected ? 'bg-white/20 text-primary-foreground' : 'bg-surface-alt text-muted'}`}
+              >
+                {t.count}
+              </span>
+            )}
           </button>
         );
       })}

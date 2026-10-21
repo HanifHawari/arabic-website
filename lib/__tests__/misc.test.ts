@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest';
+import { stripHarakat } from '@/lib/arabic';
 import { allVocab, content } from '@/lib/content';
 import { hasIllustration } from '@/lib/illustrations';
 import { adjacentModule, MODULES } from '@/lib/modules';
-import { allMufradatKeys, indaExample, itemsForTab, MUFRADAT_TABS, speechTexts } from '@/lib/mufradat';
+import { allMufradatKeys, indaExample, itemsForTab, MUFRADAT_TABS, searchItems, speechTexts } from '@/lib/mufradat';
 import { MODULE_IDS } from '@/lib/progress';
 import { createRng, sample, shuffle } from '@/lib/rng';
 import { shortMeaning, splitArabicRuns, splitSentences } from '@/lib/text';
@@ -98,5 +99,26 @@ describe('ilustrasi & modul', () => {
     expect(adjacentModule('/mufradat', -1)).toBeNull();
     expect(adjacentModule('/produksi', 1)).toBeNull();
     expect(adjacentModule('/tidak-ada', 1)).toBeNull();
+  });
+});
+
+describe('searchItems', () => {
+  it('kosong kalau query kosong', () => {
+    expect(searchItems(content, '   ')).toEqual([]);
+  });
+
+  it('cocok dengan arti Indonesia (tidak peka huruf besar)', () => {
+    expect(searchItems(content, 'TAS').some((i) => i.key === 'haqibah')).toBe(true);
+  });
+
+  it('cocok dengan tulisan Arab tanpa harakat', () => {
+    const tas = content.vocab.sekolah.find((v) => v.id === 'haqibah')!;
+    const bare = stripHarakat(tas.ar);
+    expect(searchItems(content, bare).map((i) => i.key)).toContain('haqibah');
+  });
+
+  it("mencari bentuk warna mudzakkar & mu'annats", () => {
+    const red = content.colors[0];
+    expect(searchItems(content, red.f).map((i) => i.key)).toContain(`color:${red.id}`);
   });
 });

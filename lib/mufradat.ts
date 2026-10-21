@@ -1,5 +1,6 @@
 // Item mufradat per tab (F2). Semua data dari content/bab3.json.
 
+import { normalizeForCompare } from '@/lib/arabic';
 import type { Bab3Content, Color, Pronoun, Vocab } from '@/types/content';
 
 export const MUFRADAT_TABS = [
@@ -60,3 +61,30 @@ export function meaningOf(item: MufradatItem): string {
 
 /** Contoh عِنْدَ + benda indefinit (SKILL.md §6), mis. عِنْدِي فِرْجَارٌ. */
 export const indaExample = (p: Pronoun, v: Vocab): string => `${p.inda} ${v.ar}`;
+
+/** Teks Arab yang ditampilkan untuk item (untuk pencarian). */
+function arabicOf(item: MufradatItem): string[] {
+  switch (item.kind) {
+    case 'vocab':
+      return [item.vocab.ar];
+    case 'color':
+      return [item.color.m, item.color.f];
+    case 'inda':
+      return [item.pronoun.inda];
+  }
+}
+
+/**
+ * Cari item di semua kategori berdasarkan arti Indonesia atau tulisan Arab.
+ * Arab dibandingkan tanpa harakat (normalizeForCompare), jadi "حقيبة" menemukan حَقِيْبَةٌ.
+ */
+export function searchItems(c: Bab3Content, query: string): MufradatItem[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const qAr = normalizeForCompare(q);
+  return MUFRADAT_TABS.flatMap((t) => itemsForTab(c, t.id)).filter(
+    (item) =>
+      meaningOf(item).toLowerCase().includes(q) ||
+      (qAr.length > 0 && arabicOf(item).some((ar) => normalizeForCompare(ar).includes(qAr))),
+  );
+}

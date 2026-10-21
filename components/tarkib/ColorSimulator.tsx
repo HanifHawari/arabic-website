@@ -24,7 +24,7 @@ export function ColorSimulator() {
   const s = colorSentence(content, noun, color, pattern);
 
   return (
-    <div className="space-y-4 rounded-2xl border border-border bg-surface p-4">
+    <div className="space-y-4 card rounded-2xl p-4">
       <h3 className="text-lg font-bold">🎨 Simulator Warna</h3>
       <NounSelect nouns={NOUNS} value={nounId} onChange={setNounId} />
       <fieldset>

@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { TadribPlayer } from '@/components/istima/TadribPlayer';
+import { NextModuleLink } from '@/components/NextModuleLink';
+import { PageHero } from '@/components/PageHero';
 import { Tabs } from '@/components/Tabs';
 import { TtsNotice } from '@/components/TtsNotice';
 import { useModuleVisit, useProgress } from '@/hooks/useProgress';
@@ -23,10 +25,11 @@ export function IstimaView() {
 
   return (
     <div className="space-y-5">
-      <div>
-        <h1 className="text-2xl font-bold">Istima&apos; (Menyimak)</h1>
-        <p className="text-muted">Dengarkan baik-baik, lalu pilih jawaban yang tepat. Bisa diputar ulang dan diperlambat.</p>
-      </div>
+      <PageHero
+        moduleId="istima"
+        title="Istima' (Menyimak)"
+        description="Dengarkan baik-baik, lalu pilih jawaban yang tepat. Bisa diputar ulang dan diperlambat."
+      />
       <TtsNotice />
       <Tabs
         tabs={TADRIB.map((t) => ({ id: t.id, label: `${isDone(progress, flag(t.id)) ? '✓ ' : ''}${t.title}` }))}
@@ -47,6 +50,7 @@ export function IstimaView() {
           }}
         />
       </div>
+      <NextModuleLink href="/produksi" label="Lanjut ke Produksi Teks" sub="Menulis teks pendekmu sendiri" />
     </div>
   );
 }

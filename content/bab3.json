@@ -989,6 +989,16 @@
     "mudzakkar": "مُذَكَّرٌ",
     "muannats": "مُؤَنَّثٌ"
   },
+  "module_titles": {
+    "_note": "DITAMBAHKAN AGENT (bukan dari JSON awal) untuk judul Arab di kartu modul & banner tiap halaman. WAJIB dicek guru.",
+    "mufradat": "الْمُفْرَدَاتُ",
+    "nushush": "النُّصُوْصُ",
+    "hiwar": "الْحِوَارُ",
+    "tarkib": "التَّرْكِيْبُ",
+    "latihan": "التَّدْرِيْبَاتُ",
+    "istima": "الِاسْتِمَاعُ",
+    "produksi": "إِنْتَاجُ النَّصِّ"
+  },
   "comprehension": {
     "_note": "Soal pemahaman ORISINAL untuk texts.nash, DITAMBAHKAN AGENT. Opsi Arab disalin dari vocab/colors. WAJIB dicek guru.",
     "nash1": [

@@ -11,6 +11,7 @@ Setelah semua poin dicek, banner "Konten beta" bisa dihapus dari `app/layout.tsx
 |---|---|---|
 | `grammar_words.lawn` / `lawn_stem` | لَوْنٌ / لَوْن | Dipakai generator kalimat warna (لَوْنُ، لَوْنُهُ، لَوْنُهَا). |
 | `grammar_words.mudzakkar` / `muannats` | مُذَكَّرٌ / مُؤَنَّثٌ | Label badge gender di kartu mufradat. |
+| `module_titles` | الْمُفْرَدَاتُ، النُّصُوْصُ، الْحِوَارُ، التَّرْكِيْبُ، التَّدْرِيْبَاتُ، الِاسْتِمَاعُ، إِنْتَاجُ النَّصِّ | Judul Arab di kartu modul beranda & banner tiap halaman. Penulisan sukun pada huruf mad mengikuti gaya buku (حَقِيْبَةٌ). |
 | `comprehension.nash1`, `comprehension.nash2` | 10 soal pemahaman (5 per teks) | Pertanyaannya dalam bahasa Indonesia. Opsi berbahasa Arab **disalin otomatis** dari `vocab` / `colors` (tidak diketik ulang), dan kutipan Arab di `why` sudah dicek otomatis sebagai potongan persis dari teks nash. Mohon cek apakah soal dan kunci jawabannya sudah tepat. |
 
 ## B. Inkonsistensi penulisan (tidak diubah)

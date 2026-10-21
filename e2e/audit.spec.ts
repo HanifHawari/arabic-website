@@ -87,6 +87,7 @@ test('state interaktif juga patuh aturan Arab (flashcard, popover, role-play, qu
   expect(await arabicOutsideWrapper(page)).toEqual([]);
 
   await page.goto('/tarkib');
+  await page.getByRole('tab', { name: /Warna/ }).click();
   await page.locator('#warna').getByRole('button', { name: 'Mulai 3 soal' }).click();
   expect(await arabicOutsideWrapper(page)).toEqual([]);
 

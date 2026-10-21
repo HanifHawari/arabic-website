@@ -1,14 +1,23 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Noto_Naskh_Arabic } from "next/font/google";
+import { Noto_Naskh_Arabic, Noto_Serif, Plus_Jakarta_Sans } from "next/font/google";
 import { BetaBanner } from "@/components/BetaBanner";
 import { ClassModeController } from "@/components/ClassModeController";
 import { SiteHeader } from "@/components/SiteHeader";
 import { content } from "@/lib/content";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
+  display: "swap",
+});
+
+// Judul (Latin) bergaya serif; teks Arab tetap pakai Noto Naskh Arabic.
+const notoSerif = Noto_Serif({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  display: "swap",
 });
 
 const notoNaskh = Noto_Naskh_Arabic({
@@ -24,8 +33,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#faf8f3" },
-    { media: "(prefers-color-scheme: dark)", color: "#12110f" },
+    { media: "(prefers-color-scheme: light)", color: "#f9faf8" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a1916" },
   ],
 };
 
@@ -34,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="id"
-      className={`${geistSans.variable} ${notoNaskh.variable} h-full antialiased`}
+      className={`${jakarta.variable} ${notoSerif.variable} ${notoNaskh.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <a
@@ -47,12 +56,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteHeader />
         {children}
         <ClassModeController />
-        <footer className="hide-in-class border-t border-border px-4 py-6 text-center text-xs text-muted print:hidden">
-          <p>Materi: {content.meta.source}.</p>
-          <p className="mt-1">
-            Teks bacaan, dialog, dan soal di situs ini adalah buatan sendiri (bukan salinan buku). Ilustrasi: emoji & ikon SVG
-            buatan sendiri.
-          </p>
+        <footer className="hide-in-class px-4 pb-8 print:hidden">
+          <div className="mx-auto flex max-w-5xl gap-3 rounded-2xl border border-border bg-surface-alt p-4 text-xs leading-relaxed text-muted">
+            <span aria-hidden="true" className="text-lg leading-none">
+              📚
+            </span>
+            <div>
+              <p className="font-semibold text-foreground">Materi: {content.meta.source}.</p>
+              <p className="mt-1">
+                Teks bacaan, dialog, dan soal di situs ini adalah buatan sendiri (bukan salinan buku). Ilustrasi: emoji &
+                ikon SVG buatan sendiri.
+              </p>
+            </div>
+          </div>
         </footer>
       </body>
     </html>

@@ -59,7 +59,7 @@ export function TadribPlayer({ id, desc, done, onFinish }: TadribPlayerProps) {
 
   if (idx >= rounds.length) {
     return (
-      <div className="space-y-3 rounded-2xl border border-border bg-surface p-4 text-center">
+      <div className="space-y-3 card rounded-2xl p-4 text-center">
         <p className="text-xl font-bold">
           Skor: {score}/{rounds.length}
         </p>

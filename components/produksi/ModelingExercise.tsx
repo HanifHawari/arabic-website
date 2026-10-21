@@ -18,7 +18,7 @@ export function ModelingExercise() {
 
   return (
     <div className="space-y-4">
-      <div className="space-y-1 rounded-2xl border border-border bg-surface p-4 text-sm">
+      <div className="space-y-1 card rounded-2xl p-4 text-sm">
         <p className="font-semibold">Struktur teks deskripsi:</p>
         <ul className="list-disc space-y-1 ps-5">
           <li>

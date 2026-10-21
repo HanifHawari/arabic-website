@@ -148,6 +148,7 @@ export function validateContent(data: unknown): string[] {
   });
 
   strFields(data.grammar_words, 'grammar_words', ['lawn', 'lawn_stem', 'lawn_meaning', 'mudzakkar', 'muannats']);
+  strFields(data.module_titles, 'module_titles', ['mufradat', 'nushush', 'hiwar', 'tarkib', 'latihan', 'istima', 'produksi']);
 
   if (strFields(data.comprehension, 'comprehension', [])) {
     const nashIds = isObj(data.texts) && Array.isArray(data.texts.nash)

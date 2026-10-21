@@ -15,7 +15,7 @@ export function ToggleSwitch({ checked, onChange, label, className = '' }: Toggl
       role="switch"
       aria-checked={checked}
       onClick={() => onChange(!checked)}
-      className={`inline-flex min-h-9 items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${className}`}
+      className={`inline-flex min-h-9 items-center gap-2 rounded-full bg-surface-alt px-3 py-1.5 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${className}`}
     >
       <span
         aria-hidden="true"

@@ -51,7 +51,7 @@ export function Flashcard({ item, flipped, onFlip, onSwipe }: FlashcardProps) {
         >
           <div
             aria-hidden={flipped}
-            className="col-start-1 row-start-1 flex min-h-72 flex-col items-center justify-center gap-4 rounded-3xl border border-border bg-surface p-6 pt-16 backface-hidden"
+            className="col-start-1 row-start-1 flex min-h-72 flex-col items-center justify-center gap-4 card rounded-3xl p-6 pt-16 backface-hidden"
           >
             <ItemArabic item={item} large />
             <span className="text-sm text-muted">Ketuk kartu untuk lihat arti</span>

@@ -96,7 +96,7 @@ export function WritingEditor() {
         />
       )}
 
-      <section aria-labelledby="saran-h" className="space-y-2 rounded-2xl border border-border bg-surface p-4">
+      <section aria-labelledby="saran-h" className="space-y-2 card rounded-2xl p-4">
         <h2 id="saran-h" className="font-bold">
           🤖 Saran otomatis <span className="text-sm font-normal text-muted">(bukan nilai, cek lagi sendiri ya)</span>
         </h2>
@@ -124,7 +124,7 @@ export function WritingEditor() {
         )}
       </section>
 
-      <fieldset className="space-y-2 rounded-2xl border border-border bg-surface p-4">
+      <fieldset className="space-y-2 card rounded-2xl p-4">
         <legend className="px-1 font-bold">✅ Checklist tashih (centang sendiri)</legend>
         {CHECKLIST.map((item, i) => (
           <label key={item} className="flex items-start gap-3">

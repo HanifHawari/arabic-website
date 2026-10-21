@@ -22,8 +22,8 @@ export function SubstitutionPractice({ hiwar }: { hiwar: Hiwar }) {
   const color = content.colors.find((c) => c.id === colorId)!;
 
   return (
-    <section className="space-y-4 rounded-2xl border border-border bg-surface p-4" aria-labelledby="subst-h">
-      <h2 id="subst-h" className="text-lg font-bold">
+    <section className="space-y-4 card rounded-3xl p-4 sm:p-5" aria-labelledby="subst-h">
+      <h2 id="subst-h" className="font-display text-lg font-semibold">
         🔄 Latihan substitusi
       </h2>
       <p className="text-sm text-muted">
@@ -55,7 +55,7 @@ export function SubstitutionPractice({ hiwar }: { hiwar: Hiwar }) {
           const from = { noun: substituter.nounsIn(line.ar)[0], colors: substituter.colorsIn(line.ar) };
           const ar = substituter.substitute(line.ar, noun, color);
           return (
-            <li key={line.ar} className="space-y-1 rounded-xl border border-border bg-background p-3">
+            <li key={line.ar} className="space-y-1 rounded-2xl border border-border bg-surface-alt/60 p-3">
               <p className="text-xs text-muted">
                 Asli: <ArabicText as="bdi" className="text-lg">{line.ar}</ArabicText>
               </p>
